@@ -20,7 +20,7 @@ export const Logo = styled.a.attrs({
 `
 
 export const Nav = styled.div`
-    width: 960px;
+    width: 75%;
     height: 100%;
     margin: 0 auto;
     padding-right: 70px;
@@ -85,5 +85,19 @@ export const Button = styled.div`
     &.writting{
         color: #fff;
         background: #ec6149;
+    }
+`
+
+export const Searchwrapper = styled.div`
+    position: relative;
+    float:left;
+    .iconfont {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        width: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+        text-align: center;
     }
 `
