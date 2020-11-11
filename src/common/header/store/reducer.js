@@ -3,6 +3,7 @@ import { fromJS } from 'immutable';
 
 const defaultState = fromJS({
     focused: false,
+    list: []
 });
 
 export default (state = defaultState, action) => {
@@ -12,6 +13,9 @@ export default (state = defaultState, action) => {
             return state.set('focused', true);
         case actionTypes.SEARCH_BLUR:
             return state.set('focused', false);
+        case actionTypes.CHANGE_LIST:
+            console.log(action.payload);
+            return state.set('list', action.payload);
     }
     return state;
 }
