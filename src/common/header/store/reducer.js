@@ -18,7 +18,7 @@ export default (state = defaultState, action) => {
             return state.set('focused', false);
         case actionTypes.CHANGE_LIST:
             return state.merge({
-                list: action.data,
+                list: action.payload,
                 totalPage: action.totalPage
             });
         case actionTypes.MOUSE_ENTER:
